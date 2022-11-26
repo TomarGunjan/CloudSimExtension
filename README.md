@@ -46,23 +46,38 @@ These classes initialise specific config for Simulations
 ### Tests
 SimulationTests.scala
 
-## Simulation Samples
+## Simulation Result and Inferences
 
 ### CloudModelsSimulation
 
+This class is for simulating different cloud models including Iaas Paas and Saas and arranged in brite network topology
 ![image](https://user-images.githubusercontent.com/26132783/204076546-0a5aee37-30fb-443a-a42f-cfbc168f7c65.png)
+
 
 ### TimeSharedSchedulingSimulation
 
+This class is for simulating Time shared VM and Cloudlet scheduling policies.
 ![image](https://user-images.githubusercontent.com/26132783/204076592-7fb9afb8-a04d-4131-b4b0-832774f0dd77.png)
 
 ### SpaceSharedScedulingSimulation
 
+This class is for simulating Space shared VM and Cloudlet scheduling policies.
 ![image](https://user-images.githubusercontent.com/26132783/204076617-15a86166-af60-4128-b539-031b78ff9167.png)
 
 ### RoundRobinVMAllocationPolicy
 
+This class is for simulating Round Robin VM allocation policies
+1. There are 4 hosts, 8 VMs and 8 cloudlets
+2. The VM Allocation policy is RoundRobin
+![image](https://user-images.githubusercontent.com/26132783/204077199-1df72984-b768-4fcc-bc04-aaa892c644e0.png)
+3. Vms are allocated to hosts in a cyclic manner
+![image](https://user-images.githubusercontent.com/26132783/204077115-a556b0b7-f4da-444d-a00c-642c7643631b.png)
+2. RoundRobin is a simple but naive approach an may lead to resource wastage as it doesn't consider the nature of task.
 ![image](https://user-images.githubusercontent.com/26132783/204076642-60321302-5eab-46df-86c4-f0b1a9cbf83a.png)
+ 
+
+
+
 
 
 
