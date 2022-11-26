@@ -54,8 +54,8 @@ SimulationTests.scala
 
 This class is for simulating different cloud models including Iaas Paas and Saas and arranged in brite network topology
 1. There are 3 data centers(representing Iaas, Paas, Saas) having 2 hosts, 1 VM and 2 cloudlets each.
-3. The data centers and broker are connected in brite topology
-4. The costs model for 3 datacenters are different and are mentioned in their respective configuration file with Iaas being most costly
+2. The data centers and broker are connected in brite topology
+3. The costs model for 3 datacenters are different and are mentioned in their respective configuration file with Iaas being most costly
    ### Saas
    Software as a Service provides with a completed product that is run and managed by the service provider. With a SaaS offering we do not have to think about how the    service is maintained or how the underlying infrastructure is managed. It provides least flexibility in terms on platform and Infrastructure customization and hence    is least expensive among the cloud models mentioned here.
    ### Paas
@@ -63,11 +63,15 @@ This class is for simulating different cloud models including Iaas Paas and Saas
    ### Iaas
    Infrastructure as a Service provides with the highest level of flexibility and management control over the IT resources and hence its services are most expensive.
   ![image](https://user-images.githubusercontent.com/26132783/204107063-1b33415a-08dc-404b-9958-1e29ce8767bd.png)
-5. The simulation results also concludes that Iaas is most expensive
+4. The simulation results also concludes that Iaas is most expensive
   
-  
- 
-
+### RingModelSimulation
+This class is for simulating different nodes connected in Ring Topology
+1. There are 3 data centers having 2 hosts, 1 VM and 2 cloudlets each.
+2. The data centers and broker are connected in ring topology in following order 
+   ![image](https://user-images.githubusercontent.com/26132783/204107786-b9bd12fe-af9d-4e7c-8d65-e4978f0ef9d7.png)
+3. The execution of cloudlet on DC2 has a network latency of 10 seconds more than DC1 and DC3
+   ![image](https://user-images.githubusercontent.com/26132783/204107874-62516b1c-5e01-4a37-bc8d-c6c9e724dd74.png)
 
 ### TimeSharedSchedulingSimulation
 
