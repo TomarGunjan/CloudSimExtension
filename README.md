@@ -31,6 +31,8 @@ These classes are responsible for simulation of different scenarios
 1. CloudModelsSimulation.scala
 2. SchedulerSimulation.scala
 3. VmAllocPolRoundRobin.scala
+4. AutoScaleSimulation.scala
+5. RingModelSimulation.scala
 
 ### Helper
 1. CreateLogger.scala - This class creates a logger instance
@@ -51,7 +53,20 @@ SimulationTests.scala
 ### CloudModelsSimulation
 
 This class is for simulating different cloud models including Iaas Paas and Saas and arranged in brite network topology
-![image](https://user-images.githubusercontent.com/26132783/204076546-0a5aee37-30fb-443a-a42f-cfbc168f7c65.png)
+1. There are 3 data centers(representing Iaas, Paas, Saas) having 2 hosts, 1 VM and 2 cloudlets each.
+3. The data centers and broker are connected in brite topology
+4. The costs model for 3 datacenters are different and are mentioned in their respective configuration file with Iaas being most costly
+   ### Saas
+   Software as a Service provides with a completed product that is run and managed by the service provider. With a SaaS offering we do not have to think about how the    service is maintained or how the underlying infrastructure is managed. It provides least flexibility in terms on platform and Infrastructure customization and hence    is least expensive among the cloud models mentioned here.
+   ### Paas
+   Platforms as a service remove the need for organizations to manage the underlying infrastructure (usually hardware and operating systems) and allow us to focus on      the deployment and management of your applications. It provides more user control as compared to Saas hence it is more expensive than Saas
+   ### Iaas
+   Infrastructure as a Service provides with the highest level of flexibility and management control over the IT resources and hence its services are most expensive.
+  ![image](https://user-images.githubusercontent.com/26132783/204107063-1b33415a-08dc-404b-9958-1e29ce8767bd.png)
+5. The simulation results also concludes that Iaas is most expensive
+  
+  
+ 
 
 
 ### TimeSharedSchedulingSimulation
@@ -83,6 +98,8 @@ This class is for simulating Round Robin VM allocation policies
 ![image](https://user-images.githubusercontent.com/26132783/204077115-a556b0b7-f4da-444d-a00c-642c7643631b.png)
 2. RoundRobin is a simple but naive approach an may lead to resource wastage as it doesn't consider the nature of task.
 ![image](https://user-images.githubusercontent.com/26132783/204076642-60321302-5eab-46df-86c4-f0b1a9cbf83a.png)
+
+### AutoScalingSimulation
  
 
 
