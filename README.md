@@ -57,7 +57,16 @@ This class is for simulating different cloud models including Iaas Paas and Saas
 ### TimeSharedSchedulingSimulation
 
 This class is for simulating Time shared VM and Cloudlet scheduling policies.
-![image](https://user-images.githubusercontent.com/26132783/204076592-7fb9afb8-a04d-4131-b4b0-832774f0dd77.png)
+1. There is 1 host, 1 VM and 4 cloudlets
+2. Cloudlet Sceduling Policy is Time Shared Sceduling Policy
+![image](https://user-images.githubusercontent.com/26132783/204077863-abc14963-8402-452f-bb98-e52e35a9a171.png)
+
+3. All the cloudlets were assigned to same host and VM
+![image](https://user-images.githubusercontent.com/26132783/204077887-e2d930d8-8031-41e6-9c47-02af57abb399.png)
+4. All the cloudlets took 160 seconds to run
+5. The cloudlets costs are also same
+![image](https://user-images.githubusercontent.com/26132783/204077845-5e27a446-2742-4eb2-a03d-d69fafcb4b84.png)
+
 
 ### SpaceSharedScedulingSimulation
 
