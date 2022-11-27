@@ -111,7 +111,15 @@ This class is for simulating Round Robin VM allocation policies
 ![image](https://user-images.githubusercontent.com/26132783/204076642-60321302-5eab-46df-86c4-f0b1a9cbf83a.png)
 
 ### AutoScalingSimulation
- 
+
+This class is for simulating auto-scaling PEs in a VM. According to arrival of Cloudlets the PEs in VM are scaled up or down
+1. There are 1 host 1 VM(PEs can be scaled up for this VM)that can  and 10 Cloudlets with different delays.
+   ![image](https://user-images.githubusercontent.com/26132783/204118516-37fdfeb6-0410-48f8-8fa0-21a20f113a29.png)
+
+2. The number of PEs are increased as more cloudlets arrived decreased as cloudlets(load) decreases
+   ![image](https://user-images.githubusercontent.com/26132783/204120420-cf8c75c8-ebd5-4299-a4dc-46e5c93dc093.png)
+
+
 
 
 
