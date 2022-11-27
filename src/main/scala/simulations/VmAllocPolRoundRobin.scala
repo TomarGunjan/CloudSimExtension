@@ -18,7 +18,7 @@ class VmAllocPolRoundRobin(schedulerModel: String, vmAllocation: VmAllocationPol
   val logger =CreateLogger(classOf[VmAllocPolRoundRobin])
 
   def start() = {
-    looger.info("Starting simulation for VMAllocation Round Robin policy")
+    logger.info("Starting simulation for VMAllocation Round Robin policy")
 
     //Creating cloudsim instance
     logger.info("Creating Cloudsim instance")

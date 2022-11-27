@@ -17,9 +17,11 @@ import scala.collection.JavaConverters.*
 class AutoScaleSimulation {
 
   val logger = CreateLogger(classOf[AutoScaleSimulation])
-  val autoscaleDatacenterutil = new DCConfigHelper("Autoscaling")
-  val vmList = autoscaleDatacenterutil.createVms()
 
+  //creating vms
+  val autoscaleDatacenterutil = new DCConfigHelper("Autoscaling")
+  val vmList = autoscaleDatacenterutil.createScalableVms()
+  
   def start() = {
     logger.info("Starting Autoscaling simulation")
 
@@ -36,14 +38,16 @@ class AutoScaleSimulation {
     //creating broker
     logger.info("creating broker")
     val broker0 = new DatacenterBrokerSimple(cloudsim)
+
+
     //creating cloudletlist
-    logger.info("creating cloudlet list")
-    val cloudletList = autoscaleDatacenterutil.createCloudletsWithDifferentDelays
+    logger.info("creating cloudlet list with different delays")
+    val cloudletList = autoscaleDatacenterutil.createCloudletsWithDifferentDelays()
     // submitting vm list
 
     broker0.submitVmList(vmList.asJava)
     //submitting vm list
-    broker0.submitCloudletList(cloudletList.asJava)
+    broker0.submitCloudletList(cloudletList)
 
     // Start the simulation
     logger.info("starting simulation")

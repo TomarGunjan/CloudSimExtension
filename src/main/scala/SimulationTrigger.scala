@@ -2,7 +2,7 @@ import helpers.CreateLogger
 import org.cloudbus.cloudsim.allocationpolicies.VmAllocationPolicyRoundRobin
 import org.cloudbus.cloudsim.schedulers.cloudlet.{CloudletSchedulerSpaceShared, CloudletSchedulerTimeShared}
 import org.cloudbus.cloudsim.schedulers.vm.{VmSchedulerSpaceShared, VmSchedulerTimeShared}
-import simulations.{AutoScaleSimulation, CloudModelsSimulation, SchedulerSimulation, VmAllocPolRoundRobin}
+import simulations.{AutoScaleSimulation, CloudModelsSimulation, RingModelSimulation, SchedulerSimulation, VmAllocPolRoundRobin}
 
 
 // This is the entry point for triggering different simulation
@@ -32,5 +32,9 @@ object SimulationTrigger {
     logger.info("Running VM Allocation simulation")
     val roundRobin = new VmAllocPolRoundRobin("RoundRobin", vmAllocation = new VmAllocationPolicyRoundRobin())
     roundRobin.start()
+
+    logger.info("Running RingModel simulation")
+    val ring = new RingModelSimulation()
+    ring.start()
   }
 }
