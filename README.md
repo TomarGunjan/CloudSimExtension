@@ -151,7 +151,7 @@ Alternatively docker image can be found [here](https://hub.docker.com/r/gunjan14
 
 ## References
 1. Dr. Grechanik, Mark, Cloud Computing: Theory and Practice.
-2. [AWS](https:\\google.com](https://aws.amazon.com/types-of-cloud-computing/)
+2. [AWS](https://aws.amazon.com/types-of-cloud-computing/)
 3. [CloudSim Website](https://cloudsimplus.org/)
 
 
