@@ -90,7 +90,14 @@ This class is for simulating Time shared VM and Cloudlet scheduling policies.
 ### SpaceSharedScedulingSimulation
 
 This class is for simulating Space shared VM and Cloudlet scheduling policies.
-![image](https://user-images.githubusercontent.com/26132783/204076617-15a86166-af60-4128-b539-031b78ff9167.png)
+1. There is 1 host, 1 VM and 4 cloudlets
+2. Cloudlet Sceduling Policy is Space Shared Sceduling Policy
+   ![image](https://user-images.githubusercontent.com/26132783/204118327-c42c7403-9c3a-4794-9694-2cb178148708.png)
+   
+3. All the cloudlets are executed sequentially. As the first cloudlet is executed the next cludlets wait.
+4. All the cloudlets take same time to be c ompleted and incurr same cost
+   ![image](https://user-images.githubusercontent.com/26132783/204118346-7a3dc2ea-e70e-469e-b79e-dbe0e7d9f317.png)
+
 
 ### RoundRobinVMAllocationPolicy
 
