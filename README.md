@@ -54,6 +54,9 @@ These classes initialise specific config for Simulations
 ### Tests
 SimulationTests.scala
 
+### DockerFile
+DockerFile - This file is used to create docker image
+
 ## Simulation Result and Inferences
 
 ### CloudModelsSimulation
@@ -124,6 +127,30 @@ This class is for simulating auto-scaling PEs in a VM. According to arrival of C
 
 2. The number of PEs are increased as more cloudlets arrived decreased as cloudlets(load) decreases
    ![image](https://user-images.githubusercontent.com/26132783/204120420-cf8c75c8-ebd5-4299-a4dc-46e5c93dc093.png)
+   
+## How to run this project
+
+### From Intellij
+1. Clone this repository
+2. Run main method of SimulationTrigger class
+
+### From sbt
+1. Clone this repository
+2. Cmd into this project
+3. Run following command `sbt clean compile run` 
+
+### From docker image
+1. Install docker. Many tutorials are present on internet
+2. pull the image from docker using following command `docker pull cloud-sim-ext`
+3. create container using create command(provide image name:tag) `docker create cloud-sim-ext:1.0`
+4. run following command `docker ps -a`
+5. A list of all containers should be returned. Copy `CONTAINER ID` for container created in step 3
+6. start the container using following command `docker start -a <<CONTAINERID>>`
+
+## References
+1. Dr. Grechanik, Mark, Cloud Computing: Theory and Practice.
+2. [AWS](https:\\google.com](https://aws.amazon.com/types-of-cloud-computing/)
+3. [CloudSim Website](https://cloudsimplus.org/)
 
 
 
