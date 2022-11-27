@@ -107,7 +107,7 @@ This class is for simulating Round Robin VM allocation policies
 ![image](https://user-images.githubusercontent.com/26132783/204077199-1df72984-b768-4fcc-bc04-aaa892c644e0.png)
 3. Vms are allocated to hosts in a cyclic manner
 ![image](https://user-images.githubusercontent.com/26132783/204077115-a556b0b7-f4da-444d-a00c-642c7643631b.png)
-2. RoundRobin is a simple but naive approach an may lead to resource wastage as it doesn't consider the nature of task.
+2. RoundRobin is a simple but naive approach and may lead to resource wastage as it doesn't consider the nature of task.
 ![image](https://user-images.githubusercontent.com/26132783/204076642-60321302-5eab-46df-86c4-f0b1a9cbf83a.png)
 
 ### AutoScalingSimulation
