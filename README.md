@@ -141,7 +141,7 @@ This class is for simulating auto-scaling PEs in a VM. According to arrival of C
 
 ### From docker image
 1. Install docker. Many tutorials are present on internet
-2. pull the image from docker using following command `docker pull cloud-sim-ext`
+2. pull the image from docker using following command `docker pull gunjan141191/cloud-sim-ext`
 3. create container using create command(provide image name:tag) `docker create cloud-sim-ext:1.0`
 4. run following command `docker ps -a`
 5. A list of all containers should be returned. Copy `CONTAINER ID` for container created in step 3
