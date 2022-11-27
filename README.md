@@ -147,6 +147,8 @@ This class is for simulating auto-scaling PEs in a VM. According to arrival of C
 5. A list of all containers should be returned. Copy `CONTAINER ID` for container created in step 3
 6. start the container using following command `docker start -a <<CONTAINERID>>`
 
+Alternatively docker image can be found [here](https://hub.docker.com/r/gunjan141191/cloud-sim-ext)
+
 ## References
 1. Dr. Grechanik, Mark, Cloud Computing: Theory and Practice.
 2. [AWS](https:\\google.com](https://aws.amazon.com/types-of-cloud-computing/)
